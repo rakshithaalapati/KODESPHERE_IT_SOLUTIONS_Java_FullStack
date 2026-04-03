@@ -1,0 +1,24 @@
+CREATE TABLE donor (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    blood_group VARCHAR(10),
+    email VARCHAR(100),
+    status VARCHAR(20)
+);
+CREATE TABLE blood_request (
+    id SERIAL PRIMARY KEY,
+    patient_name VARCHAR(100),
+    blood_group VARCHAR(10),
+    status VARCHAR(20)
+);
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100),
+    password VARCHAR(100),
+    role VARCHAR(20)
+);
+CREATE TABLE blood_inventory (
+    id SERIAL PRIMARY KEY,
+    blood_group VARCHAR(10),
+    units_available INT
+);

@@ -1,0 +1,9 @@
+CREATE TABLE projects (
+    id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description VARCHAR(1000),
+    technologies VARCHAR(255),
+    github_link VARCHAR(255),
+    live_link VARCHAR(255),
+    image_url VARCHAR(255)
+);
